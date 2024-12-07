@@ -287,6 +287,8 @@ html{
     padding: 8px 16px;
     display: inline-block;
     margin: 8px 0px 4px;
+    cursor: pointer;
+    border: none;
 }
 
 #footer{
@@ -317,6 +319,7 @@ html{
     min-height: 200px;
     position: relative;
     max-width: calc(100% - 64px);
+    animation: modalFadeIn ease .4s;
 }
 
 header.modal-heading {
@@ -388,4 +391,14 @@ p.modal-help {
 
 .modal-help a{
     color: #2196f3;
+}
+
+/* Animation */
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-250px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
