@@ -151,6 +151,43 @@
             <div class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <!-- Form Contact -->
+                <div class="row form-around">
+
+                    <!-- Form info -->
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i> Chicago, US</p>
+                        <p><i class="ti-tablet"></i> Phone: +00 151515</p>
+                        <p><i class="ti-email"></i> Email: mail@mail.com</p>
+                    </div>
+
+                    <!-- Form input -->
+                    <div class="col col-half contact-input">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+
+                                <div class="col col-half">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-full mt-8">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+
+                            <input class="mt-16 input-form" type="submit" value="SEND">
+                        </form>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
             </div>
         </div>
 
@@ -197,24 +234,24 @@
         </div>
 
         <!-- JS - BUY - TICKET -->
-         <script>
+        <script>
             const buyBtns = document.querySelectorAll('.js-buy-ticket');
             const modal = document.querySelector('.js-modal');
             const modalContainer = document.querySelector('.js_modal_container')
             const closeBuyBtn = document.querySelector('.js-modal-close');
 
             // Ham hien thi modal mua ve
-            function showBuyTicket(){
+            function showBuyTicket() {
                 modal.classList.add('open');
             }
 
             // Hide modal buy ticket 
-            function hideBuyTicket(){
+            function hideBuyTicket() {
                 modal.classList.remove('open');
             }
 
             //  lap qua tuwng the button va nghe hanh vi click
-            for(const buyBtn of buyBtns){
+            for (const buyBtn of buyBtns) {
                 buyBtn.addEventListener('click', showBuyTicket);
             }
 
@@ -223,10 +260,10 @@
 
             modal.addEventListener('click', hideBuyTicket);
 
-            modalContainer.addEventListener('click', function (event){
+            modalContainer.addEventListener('click', function (event) {
                 event.stopPropagation();
             })
-         </script>
+        </script>
     </div>
 </body>
 
