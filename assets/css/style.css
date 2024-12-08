@@ -25,6 +25,26 @@
     text-align: center;
 }
 
+.pull-right{
+    float: right;
+}
+
+.btn:hover {
+    background: #ccc;
+    color: #000;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 8px 0px 4px;
+    cursor: pointer;
+    border: none;
+}
+
 .row {
     margin-left: -15px;
     margin-right: -15px;
@@ -195,7 +215,7 @@ html {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -304,21 +324,6 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn:hover {
-    background: #ccc;
-    color: #000;
-}
-
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 8px 16px;
-    display: inline-block;
-    margin: 8px 0px 4px;
-    cursor: pointer;
-    border: none;
-}
 
 /* Modal */
 
@@ -442,14 +447,8 @@ p.modal-help {
     font-size: 18px;
 }
 
-.input-form {
-    padding: 14px 20px;
-    border: none;
-    background-color: black;
-    color: #fff;
-    float: right;
-    margin-right: -6px;
-    font-size: 15px;
+.contact-submit {
+    margin-right: -5px;
 }
 
 .form-around .form-control {
@@ -457,8 +456,32 @@ p.modal-help {
     width: 100%;
 }
 
+/* Map section */
+.map-section img{
+    width: 100%;
+}
 
-
+/* Footer */
 #footer {
+    padding: 64px 16px;
+    text-align: center;
+}
 
+#footer .footer-list a{
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .footer-list a:hover,
+#footer .copy-right a:hover{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copy-right{
+    margin: 15px 0;
+}
+
+#footer .copy-right a{
+    color: rgba(0, 0, 0, 0.6);
 }
