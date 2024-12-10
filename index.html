@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2995/2995035.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons-font/themify-icons/themify-icons.css">
 
     <!-- 
@@ -26,7 +27,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-down ti-angle-down"></i>
                     </a>
@@ -41,9 +42,11 @@
 
             <!--  Begin: Search button -->
             <div class="search-btn">
-                <i class="icon-btn-search  ti-search">
+                <i class="icon-btn-search  ti-search"></i>
+            </div>
 
-                </i>
+            <div id="mobile-menu" class="menu-mobile">
+                <i class="icon-menu-mobile ti-menu"></i>
             </div>
 
             <!--  End: Search button -->
@@ -289,6 +292,26 @@
             modalContainer.addEventListener('click', function (event) {
                 event.stopPropagation();
             })
+        </script>
+
+        <!-- JS-Mobile-Menu -->
+        <script>
+            var header = document.getElementById('header');
+            var clickMenu = document.getElementById('mobile-menu');
+            var curHeight = header.clientHeight;
+
+            clickMenu.onclick = function (){
+                var isClose = header.clientHeight === curHeight;
+                
+                if(isClose){
+                    header.style.height = '230px';
+                }
+                else{
+                    header.style.height = curHeight + 'px';
+                }
+            }
+
+            
         </script>
     </div>
 </body>
