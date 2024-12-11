@@ -8,8 +8,12 @@
 
 @media (max-width: 739px) {
     
+    .s-width-ful{
+        width: 100% !important;
+    }
+
     .s-col-ful{
-        width: 100%;
+        width: 100% !important;
     }
 
     #header{
@@ -42,6 +46,25 @@
 
     #content .img-member{
         width: 60%;
+    }
+
+    .mobile-email{
+        margin-top: 8px;
+    }
+    
+    .mobile-name{
+        margin-top: 20px;
+    }
+
+    .form-around .form-control {
+        padding: 16px 12px;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .btn{
+        margin: auto;
+        padding: 12px 16px;
     }
 
 }

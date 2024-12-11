@@ -463,6 +463,11 @@ p.modal-help {
     width: 100%;
 }
 
+.contact-input{
+    padding-left: 15px;
+    padding-right: 0px;
+}
+
 .contact-info i[class*="ti-"] {
     width: 25px;
     display: inline-block;
