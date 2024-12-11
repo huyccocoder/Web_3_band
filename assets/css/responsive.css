@@ -7,6 +7,18 @@
 }
 
 @media (max-width: 739px) {
+    
+    #header{
+        overflow: hidden;
+    }
+
+    #header .menu-mobile{
+        display: block;
+    }
+
+    #header .search-btn {
+        display: none;
+    }
 
     #nav{
         display: block;
@@ -20,11 +32,8 @@
         display: block;
     }
 
-    #header .menu-mobile{
-        display: block;
+    #nav .subnav {
+        position: initial;
     }
 
-    #header .search-btn {
-        display: none;
-    }
 }

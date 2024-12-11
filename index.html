@@ -188,7 +188,8 @@
 
                             <div class="row">
                                 <div class="col col-full mt-8">
-                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                    <input type="text" name="" placeholder="Message" required id=""
+                                        class="form-control">
                                 </div>
                             </div>
 
@@ -299,24 +300,30 @@
             var clickMenu = document.getElementById('mobile-menu');
             var curHeight = header.clientHeight;
 
-            clickMenu.onclick = function (){
+            clickMenu.onclick = function () {
                 var isClose = header.clientHeight === curHeight;
-                
-                if(isClose){
+
+                if (isClose) {
                     header.style.height = '230px';
                 }
-                else{
+                else {
                     header.style.height = curHeight + 'px';
                 }
             }
 
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            
-            for(var i =0; i < menuItems.length; i++){
-                menuItem = menuItems[i];
+
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
                 
-                menuItem.onclick = function (){
-                    header.style.height = null;
+                menuItem.onclick = function (event) {
+                    var isMore = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if(isMore){
+                        event.preventDefault();
+                    }
+                    else{
+                        header.style.height = null;
+                    }
                 }
             }
         </script>
