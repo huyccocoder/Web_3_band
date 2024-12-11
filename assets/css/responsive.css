@@ -7,7 +7,20 @@
 }
 
 @media (max-width: 739px) {
+
+    #nav{
+        display: block;
+    }
+
+    #nav>li:first-child {
+        display: inline-block;
+    }
+
     #nav>li {
+        display: block;
+    }
+
+    #header .menu-mobile{
         display: block;
     }
 
