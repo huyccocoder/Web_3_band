@@ -8,6 +8,10 @@
 
 @media (max-width: 739px) {
     
+    .s-col-ful{
+        width: 100%;
+    }
+
     #header{
         overflow: hidden;
     }
@@ -34,6 +38,10 @@
 
     #nav .subnav {
         position: initial;
+    }
+
+    #content .img-member{
+        width: 60%;
     }
 
 }
