@@ -262,7 +262,6 @@
         </div>
 
         <!-- JS - BUY - TICKET -->
-         <!-- afff -->
         <script>
             const buyBtns = document.querySelectorAll('.js-buy-ticket');
             const modal = document.querySelector('.js-modal');
@@ -311,7 +310,15 @@
                 }
             }
 
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
             
+            for(var i =0; i < menuItems.length; i++){
+                menuItem = menuItems[i];
+                
+                menuItem.onclick = function (){
+                    header.style.height = null;
+                }
+            }
         </script>
     </div>
 </body>
